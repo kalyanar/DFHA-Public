@@ -190,7 +190,7 @@ git commit -m "Initial commit: DFHA reference implementation
 
 Accompanies IEEE Access paper: 'Deterministic-First Hybrid Agents:
 Progressive Workflow Synthesis from Runtime Execution Traces'
-Authors: Gopal Kalyanaraman and Vijay Dialani (Georgia Tech)"
+Authors: Gopal Kalyanaraman and Vijay K. Madisetti (Georgia Tech)"
 ```
 
 ### Step 2: Create GitHub Repository

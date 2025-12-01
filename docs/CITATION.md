@@ -7,7 +7,7 @@ If you use DFHA in your research or build upon this work, please cite our paper:
 ```bibtex
 @article{kalyanaraman2025dfha,
   title={Deterministic-First Hybrid Agents: Progressive Workflow Synthesis from Runtime Execution Traces},
-  author={Kalyanaraman, Gopal and Dialani, Vijay},
+  author={Kalyanaraman, Gopal and Madisetti, Vijay K.},
   journal={IEEE Access},
   volume={XX},
   number={XX},
@@ -20,23 +20,23 @@ If you use DFHA in your research or build upon this work, please cite our paper:
 
 ## APA Style
 
-Kalyanaraman, G., & Dialani, V. (2025). Deterministic-First Hybrid Agents: Progressive Workflow Synthesis from Runtime Execution Traces. *IEEE Access*, *XX*(XX), XXXXX-XXXXX. https://doi.org/10.1109/ACCESS.2025.XXXXXXX
+Kalyanaraman, G., & Madisetti, V. K. (2025). Deterministic-First Hybrid Agents: Progressive Workflow Synthesis from Runtime Execution Traces. *IEEE Access*, *XX*(XX), XXXXX-XXXXX. https://doi.org/10.1109/ACCESS.2025.XXXXXXX
 
 ## MLA Style
 
-Kalyanaraman, Gopal, and Vijay Dialani. "Deterministic-First Hybrid Agents: Progressive Workflow Synthesis from Runtime Execution Traces." *IEEE Access*, vol. XX, no. XX, 2025, pp. XXXXX-XXXXX, doi:10.1109/ACCESS.2025.XXXXXXX.
+Kalyanaraman, Gopal, and Vijay K. Madisetti. "Deterministic-First Hybrid Agents: Progressive Workflow Synthesis from Runtime Execution Traces." *IEEE Access*, vol. XX, no. XX, 2025, pp. XXXXX-XXXXX, doi:10.1109/ACCESS.2025.XXXXXXX.
 
 ## Chicago Style
 
-Kalyanaraman, Gopal, and Vijay Dialani. 2025. "Deterministic-First Hybrid Agents: Progressive Workflow Synthesis from Runtime Execution Traces." *IEEE Access* XX (XX): XXXXX-XXXXX. https://doi.org/10.1109/ACCESS.2025.XXXXXXX.
+Kalyanaraman, Gopal, and Vijay K. Madisetti. 2025. "Deterministic-First Hybrid Agents: Progressive Workflow Synthesis from Runtime Execution Traces." *IEEE Access* XX (XX): XXXXX-XXXXX. https://doi.org/10.1109/ACCESS.2025.XXXXXXX.
 
 ## IEEE Style
 
-G. Kalyanaraman and V. Dialani, "Deterministic-First Hybrid Agents: Progressive Workflow Synthesis from Runtime Execution Traces," *IEEE Access*, vol. XX, no. XX, pp. XXXXX-XXXXX, 2025, doi: 10.1109/ACCESS.2025.XXXXXXX.
+G. Kalyanaraman and V. K. Madisetti, "Deterministic-First Hybrid Agents: Progressive Workflow Synthesis from Runtime Execution Traces," *IEEE Access*, vol. XX, no. XX, pp. XXXXX-XXXXX, 2025, doi: 10.1109/ACCESS.2025.XXXXXXX.
 
 ## Plain Text
 
-Gopal Kalyanaraman and Vijay Dialani. "Deterministic-First Hybrid Agents: Progressive Workflow Synthesis from Runtime Execution Traces." IEEE Access, 2025.
+Gopal Kalyanaraman and Vijay K. Madisetti. "Deterministic-First Hybrid Agents: Progressive Workflow Synthesis from Runtime Execution Traces." IEEE Access, 2025.
 
 ## Citing the Software
 
@@ -44,7 +44,7 @@ If you specifically want to cite this software implementation:
 
 ```bibtex
 @software{kalyanaraman2025dfha_code,
-  author = {Kalyanaraman, Gopal and Dialani, Vijay},
+  author = {Kalyanaraman, Gopal and Madisetti, Vijay K.},
   title = {DFHA: Reference Implementation},
   year = {2025},
   publisher = {GitHub},
@@ -93,7 +93,7 @@ Or for implementation:
 ## Questions?
 
 For questions about citation or attribution:
-- **Email**: [email@gatech.edu]
+- **Email**: gkalyanaraman3@gatech.edu
 - **GitHub Issues**: https://github.com/your-username/DFHA-Public/issues
 
 ---

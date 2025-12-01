@@ -4,7 +4,7 @@
 [![Paper](https://img.shields.io/badge/Paper-IEEE%20Access-blue)](https://ieeexplore.ieee.org)
 
 > **Official Implementation**: "Deterministic-First Hybrid Agents: Progressive Workflow Synthesis from Runtime Execution Traces"
-> Gopal Kalyanaraman (Georgia Tech) and Vijay Dialani (Georgia Tech)
+> Gopal Kalyanaraman (Georgia Tech) and Vijay K. Madisetti (Georgia Tech)
 > Published in IEEE Access, 2025
 
 ## 📖 Overview
@@ -263,8 +263,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📧 Contact
 
-- **Gopal Kalyanaraman** - [email@gatech.edu] - Georgia Institute of Technology
-- **Vijay Dialani** - [email@gatech.edu] - Georgia Institute of Technology
+- **Gopal Kalyanaraman** - gkalyanaraman3@gatech.edu - Georgia Institute of Technology
+- **Vijay K. Madisetti** - vm10@gatech.edu - Georgia Institute of Technology
 
 ## 🔄 Version History
 
