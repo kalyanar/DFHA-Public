@@ -1,0 +1,65 @@
+{
+  "generationTime": "2025-12-01T08:19:28.959Z",
+  "config": {
+    "outputDir": "./data/synthetic_traces",
+    "tracesPerPattern": 50,
+    "variationRate": 0.3,
+    "noiseRate": 0.1
+  },
+  "summary": {
+    "it_support": 150,
+    "financial": 150,
+    "healthcare": 150,
+    "ecommerce": 150
+  },
+  "statistics": {
+    "it_support": {
+      "totalTraces": 150,
+      "patterns": [
+        "analyze_performance",
+        "trace_transaction",
+        "investigate_incident"
+      ],
+      "avgTaskCount": 18.24,
+      "avgDuration": 2744.6038162532327,
+      "successRate": 0.9533333333333334,
+      "llmUsageRate": 0.07931286549707603
+    },
+    "financial": {
+      "totalTraces": 150,
+      "patterns": [
+        "credit_application",
+        "account_reconciliation",
+        "fraud_detection"
+      ],
+      "avgTaskCount": 16.933333333333334,
+      "avgDuration": 2547.5587771541414,
+      "successRate": 0.9466666666666667,
+      "llmUsageRate": 0.07362204724409449
+    },
+    "healthcare": {
+      "totalTraces": 150,
+      "patterns": [
+        "triage_patient",
+        "lab_result_analysis",
+        "medication_review"
+      ],
+      "avgTaskCount": 18.28,
+      "avgDuration": 2740.1373557498973,
+      "successRate": 0.9333333333333333,
+      "llmUsageRate": 0.0813274981765135
+    },
+    "ecommerce": {
+      "totalTraces": 150,
+      "patterns": [
+        "order_fulfillment",
+        "return_processing",
+        "product_recommendation"
+      ],
+      "avgTaskCount": 18.186666666666667,
+      "avgDuration": 2728.5711806632344,
+      "successRate": 0.9533333333333334,
+      "llmUsageRate": 0.07844574780058651
+    }
+  }
+}

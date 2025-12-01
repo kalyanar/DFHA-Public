@@ -1,0 +1,78 @@
+{
+  "name": "dfha-public",
+  "version": "1.0.0",
+  "description": "Deterministic-First Hybrid Agents: Progressive Workflow Synthesis from Runtime Execution Traces",
+  "main": "src/index.js",
+  "scripts": {
+    "docker:up": "docker-compose up -d",
+    "docker:down": "docker-compose down",
+    "docker:logs": "docker-compose logs -f",
+    "wait": "node scripts/wait-for-services.js",
+    "setup:tables": "node scripts/setup-local-tables.js",
+    "setup:queues": "node scripts/setup-local-queues.js",
+    "setup:infrastructure": "npm run setup:tables && npm run setup:queues",
+    "generate:data": "node scripts/generate-synthetic-data.js",
+    "evaluate": "node evaluation/run_evaluation.js",
+    "evaluate:quick": "node evaluation/run_evaluation.js --quick",
+    "evaluate:domains": "node evaluation/run_evaluation.js --domains",
+    "evaluate:phases": "node evaluation/run_evaluation.js --phases",
+    "evaluate:cost": "node evaluation/run_evaluation.js --cost",
+    "analyze": "node scripts/analyze-results.js",
+    "analyze:confidence": "node scripts/analyze-results.js --confidence",
+    "analyze:significance": "node scripts/analyze-results.js --significance",
+    "analyze:sensitivity": "node scripts/analyze-results.js --sensitivity",
+    "generate:table2": "node scripts/generate-latex-tables.js --table2",
+    "generate:table3": "node scripts/generate-latex-tables.js --table3",
+    "generate:figure3": "node scripts/generate-plot-data.js --figure3",
+    "generate:figure4": "node scripts/generate-plot-data.js --figure4",
+    "full-poc": "npm run docker:up && npm run wait && npm run setup:infrastructure && npm run generate:data && npm run evaluate && npm run analyze",
+    "clean": "rm -rf data/synthetic_traces/* results/* node_modules/.cache",
+    "verify": "node scripts/verify-installation.js",
+    "verify:infrastructure": "node scripts/verify-infrastructure.js",
+    "test": "jest",
+    "lint": "eslint src/ evaluation/ scripts/",
+    "package:results": "node scripts/package-results.js"
+  },
+  "keywords": [
+    "LLM",
+    "agents",
+    "workflow-synthesis",
+    "thompson-sampling",
+    "process-mining",
+    "deterministic-workflows"
+  ],
+  "authors": [
+    {
+      "name": "Gopal Kalyanaraman",
+      "email": "email@gatech.edu",
+      "affiliation": "Georgia Institute of Technology"
+    },
+    {
+      "name": "Vijay Dialani",
+      "email": "email@gatech.edu",
+      "affiliation": "Georgia Institute of Technology"
+    }
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/DFHA-Public.git"
+  },
+  "bugs": {
+    "url": "https://github.com/your-username/DFHA-Public/issues"
+  },
+  "homepage": "https://github.com/your-username/DFHA-Public#readme",
+  "dependencies": {
+    "aws-sdk": "^2.1400.0",
+    "uuid": "^9.0.0",
+    "js-yaml": "^4.1.0"
+  },
+  "devDependencies": {
+    "jest": "^29.5.0",
+    "eslint": "^8.40.0"
+  },
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=7.0.0"
+  }
+}

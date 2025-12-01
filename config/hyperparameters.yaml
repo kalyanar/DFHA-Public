@@ -1,0 +1,125 @@
+# DFHA Hyperparameters Configuration
+# All values match the IEEE Access paper
+
+# Pattern Mining Parameters (Section 4.2)
+pattern_mining:
+  # θ_align: Minimum alignment score for sequence alignment
+  # Higher = stricter matching, fewer patterns
+  alignment_threshold: 0.7
+
+  # θ_consensus: Minimum task frequency to include in consensus pattern
+  # Higher = more conservative, shorter patterns
+  consensus_threshold: 0.8
+
+  # θ_confidence: Minimum confidence to synthesize workflow
+  # Higher = fewer workflows, higher quality
+  confidence_threshold: 0.75
+
+  # Minimum successful traces before attempting pattern mining
+  min_traces_required: 3
+
+  # Maximum traces to use for a single pattern
+  max_traces_per_pattern: 10
+
+  # Pattern mining frequency (milliseconds)
+  mining_interval_ms: 3600000  # 1 hour
+
+# Thompson Sampling Parameters (Section 5.1)
+thompson_sampling:
+  # Beta distribution prior parameters
+  # α = β = 1 gives uniform prior
+  prior_alpha: 1.0
+  prior_beta: 1.0
+
+  # Optional exploration bonus (0 = pure Thompson Sampling)
+  exploration_bonus: 0.0
+
+# Trace Storage Parameters
+storage:
+  # DynamoDB tables
+  traces_table: "RosettaExecutionTraces"
+  workflows_table: "RosettaSynthesizedWorkflows"
+  patterns_table: "RosettaMinedPatterns"
+  routing_table: "RosettaRoutingStats"
+
+  # Retention policies
+  trace_retention_days: 30
+  max_traces_per_fingerprint: 10
+
+  # Cleanup frequency
+  cleanup_interval_hours: 24
+
+# Evaluation Parameters (Section 6)
+evaluation:
+  # Synthetic data generation
+  traces_per_pattern: 50
+  variation_rate: 0.3      # 30% of traces get variations
+  noise_rate: 0.1          # 10% of traces get noise (retries, delays)
+
+  # Evaluation phases
+  warmup_traces: 10
+  learning_phase_fraction: 0.5  # 50% for learning, 50% for steady state
+
+  # Statistical analysis
+  bootstrap_iterations: 1000
+  confidence_level: 0.95   # 95% confidence intervals
+
+  # Domains to evaluate
+  domains:
+    - it_support
+    - financial
+    - healthcare
+    - ecommerce
+
+# Cost Parameters (for evaluation)
+cost:
+  # LLM pricing (GPT-4 as of 2024)
+  input_token_cost_per_1k: 0.03   # $0.03 per 1K input tokens
+  output_token_cost_per_1k: 0.06  # $0.06 per 1K output tokens
+
+  # Infrastructure costs
+  lambda_cost_per_invocation: 0.0000002
+  dynamodb_read_cost_per_unit: 0.00025
+  dynamodb_write_cost_per_unit: 0.00125
+  sqs_cost_per_request: 0.0000004
+
+  # Deterministic execution cost (estimate)
+  deterministic_cost_per_query: 0.0001
+
+# Logging and Monitoring
+logging:
+  level: "INFO"  # DEBUG, INFO, WARN, ERROR
+  log_traces: true
+  log_pattern_mining: true
+  log_synthesis: true
+  log_routing: true
+
+# Local Development (LocalStack)
+local_dev:
+  localstack_endpoint: "http://localhost:4566"
+  elasticmq_endpoint: "http://localhost:9324"
+  aws_region: "us-east-1"
+  aws_access_key_id: "test"
+  aws_secret_access_key: "test"
+
+# Domain-Specific Configurations
+domain_configs:
+  it_support:
+    alignment_threshold: 0.7
+    consensus_threshold: 0.8
+    confidence_threshold: 0.75
+
+  financial:
+    alignment_threshold: 0.75  # Stricter for safety
+    consensus_threshold: 0.85
+    confidence_threshold: 0.80
+
+  healthcare:
+    alignment_threshold: 0.75
+    consensus_threshold: 0.85
+    confidence_threshold: 0.85  # Highest safety
+
+  ecommerce:
+    alignment_threshold: 0.65  # More permissive
+    consensus_threshold: 0.75
+    confidence_threshold: 0.70
