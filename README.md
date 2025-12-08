@@ -16,6 +16,9 @@
 - **71% cost reduction** ($0.0125 vs $0.0426 per query)
 - **97.5% success rate** maintained across all execution modes
 
+Status: Submitted for peer review (Nov 2025).
+This code is provided for transparency and early testing; the associated manuscript is under review and not yet published. Citation recommendations will be updated upon acceptance.
+
 ## 🏗️ Architecture
 
 DFHA consists of four core components:
