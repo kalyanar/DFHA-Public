@@ -5,7 +5,7 @@
 
 > **Official Implementation**: "Deterministic-First Hybrid Agents: Progressive Workflow Synthesis from Runtime Execution Traces"
 > Gopal Kalyanaraman (Georgia Tech) and Vijay K. Madisetti (Georgia Tech)
-> Published in IEEE Access, 2025
+> submitted for review in IEEE Access, 2025
 
 ## 📖 Overview
 
